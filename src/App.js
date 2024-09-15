@@ -7,6 +7,8 @@ import ChatBotHome from './Component/ChatBotHome';
 import ChatBot1 from './Component/ChatBot1';
 import Translator from './Component/Tranlator';
 import About from './Component/About';
+import FaqList from './Component/Faq';
+import CreateFaq from './Component/CreateFaq';
 
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <Route path='/FruitChat' element={<ChatBot1/>} />
         <Route path='/Translator' element={<Translator/>} />
         <Route path='/About' element={<About/>} />
+        <Route path='/Faq' element={<FaqList/>} />
+        <Route path='/create-faq' element={<CreateFaq/>} />
       </Routes>
     </div>
   );

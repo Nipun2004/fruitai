@@ -1,0 +1,145 @@
+/* Container and base styles */
+/* *{
+    font-family: 'Poppins';
+} */
+.faq-container {
+    max-width: 800px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .faq-title {
+    text-align: center;
+    font-size: 7rem;
+    margin-bottom: 20px;
+    color:#9d3adb ;
+  }
+  
+  /* FAQ List styling */
+  .faq-list {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .faq-item {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .faq-item h3 {
+    /* font-size: 1.5rem; */
+    margin-bottom: 5px;
+    color: #333;
+  }
+ 
+  /* Buttons styling */
+  .btn {
+    background-color: #c571f8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .fruitname{
+    margin-bottom: 10px;
+    color:#9d3adb ;
+  }
+  .edit-deletebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn:hover {
+    background-color: #b165e0;
+  }
+  
+  .btn-delete {
+    background-color: #dc3545;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c82333;
+  }
+  
+  .btn-cancel {
+    background-color: #6c757d;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Form styling */
+  .faq-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .faq-container {
+      padding: 15px;
+    }
+  
+    .faq-title {
+      font-size: 1.5em;
+    }
+  
+    .btn {
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+  
+    .faq-item {
+      padding: 15px;
+    }
+  
+    input, textarea {
+      padding: 8px;
+    }
+}

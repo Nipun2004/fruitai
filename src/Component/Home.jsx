@@ -14,6 +14,9 @@ const Home = () => {
     function handleTranslate(){
       navigate('/Translator')
     }
+    function handleFaq(){
+      navigate('/Faq')
+    }
   return (
     <div className="home-container">
       <div className="header">
@@ -25,7 +28,7 @@ const Home = () => {
         <div className="button translate-button" onClick={handleTranslate}>
         <SiGoogletranslate />
         </div>
-        <div className="button faqs-button">FAQs</div>
+        <div className="button faqs-button" onClick={handleFaq}>FAQs</div>
         <div className="button about-button" onClick={handleAbout}>About</div>
       </div>
       <div className="pagination-dots">

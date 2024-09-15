@@ -23,10 +23,11 @@ const Login = () => {
       <p className="login-agreement">
         By signing in you are agreeing to our <a href="#">Term and privacy policy</a>
       </p>
-      <div className="login-tabs">
+      {/* <div className="login-tabs">
         <button className="login-tab active">Login</button>
         <button className="login-tab">Register</button>
-      </div>
+      </div> */}
+      
 
       <form className="login-form">
         <div className="input-group">
