@@ -13,7 +13,7 @@ function FaqList() {
   const [fruit, setFruit] = useState('');
 
   const handleDelete = (id) => {
-    axios.delete(`http://127.0.0.1:5000/faqs/${id}`)
+    axios.delete(`https://fruitai-pwl1.vercel.app/faqs/${id}`)
       .then(() => {
         // Remove the deleted FAQ from the list
         setFaqs(faqs.filter(faq => faq.id !== id));
@@ -31,7 +31,7 @@ function FaqList() {
   const handleUpdate = (event) => {
     event.preventDefault();
 
-    axios.put(`http://127.0.0.1:5000/faqs/${editingFaq.id}`, {
+    axios.put(`https://fruitai-pwl1.vercel.app/faqs/${editingFaq.id}`, {
       question: question,
       answer: answer,
       fruit: fruit
@@ -46,7 +46,7 @@ function FaqList() {
 
   useEffect(() => {
     // Fetch FAQs from Flask API
-    axios.get('http://127.0.0.1:5000/faqs')
+    axios.get('https://fruitai-pwl1.vercel.app/faqs')
       .then(response => {
         setFaqs(response.data);
         setLoading(false);
