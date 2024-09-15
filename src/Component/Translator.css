@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+  }
+  
+  .container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px #000;
+  }
+  
+  .wrapper {
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .text-input {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 250px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  textarea::placeholder {
+    color: #b7b7b7;
+  }
+  
+  .to-text {
+    border-radius: 0px 10px 10px 0px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .controls,
+  li,
+  .icons,
+  .icons i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .controls .row .icons i {
+    width: 40px;
+    font-size: 16px;
+    color: #b7b7b7;
+  }
+  
+  .controls .row.from .icons {
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .controls .row.to .icons {
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+  }
+  
+  select {
+    color: #333;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0px 20px 0px 15px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #c571f8;
+  }
+  
+  /* Responsive Styles */
+  
+  /* Mobile styles (max-width: 480px) */
+  @media (max-width: 480px) {
+    .text-input {
+      flex-direction: column;
+    }
+  
+    textarea {
+      height: 150px;
+      font-size: 16px;
+    }
+  
+    select {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  
+    .controls .row.from .icons,
+    .controls .row.to .icons {
+      padding: 0;
+      margin-left: 50px;
+      border: none;
+    }
+  
+    .controls {
+      flex-direction: column;
+    }
+  
+    .icons i {
+      font-size: 20px;
+      width: 30px;
+    }
+  }
+  
+  /* Tablet styles (max-width: 768px) */
+  @media (max-width: 768px) {
+    .container {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    textarea {
+      font-size: 17px;
+    }
+  
+    .icons i {
+      font-size: 18px;
+      width: 35px;
+    }
+  
+    select {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+  
+  
