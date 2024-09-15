@@ -16,7 +16,7 @@ function CreateFaq() {
 
     // Send POST request to Flask API
     axios
-      .post('https://fruitai-pwl1.vercel.app/faqs', {
+      .post('http://127.0.0.1:5000/faqs', {
         question: question,
         answer: answer,
         fruit: fruit,
